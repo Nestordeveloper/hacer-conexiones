@@ -25,15 +25,13 @@ function editProfile() {
     var nameInputElement = document.getElementById("nameInput");
 
     if (userNameElement.style.display === "none") {
-        // Mostrar el nombre y ocultar el campo de entrada de texto
         userNameElement.innerText = nameInputElement.value;
         userNameElement.style.display = "inline";
         nameInputElement.style.display = "none";
     } else {
-        // Mostrar el campo de entrada de texto y ocultar el nombre
         nameInputElement.value = userNameElement.innerText;
         userNameElement.style.display = "none";
         nameInputElement.style.display = "inline";
-        nameInputElement.focus(); // Enfocar el campo de entrada
+        nameInputElement.focus();
     }
 }
