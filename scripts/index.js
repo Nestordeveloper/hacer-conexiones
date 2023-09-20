@@ -35,3 +35,23 @@ function editProfile() {
         nameInputElement.focus();
     }
 }
+
+
+//* Funciones objetivo *//
+function cambiarNombre(elemento){
+    const elementoNombreUsuario = document.querySelector('userName');
+    elementoNombreUsuario.innerText = "Martha Gómez";
+}
+
+function removerUsuario(elemento, opcion){
+    const contenedor = elemento.closes('card-list-item');
+    contenedor.remove();
+    let numeroDeConexiones = document.querySelector('#connectionRequestNumber').innerText = numeroDeConexiones;
+    numeroDeConexiones--;
+    document.querySelector('#connectionRequestNumber').innerText = numeroDeConexiones;
+    if(opcion === 'aceptar'){
+        let numeroTotalDeConexiones = document.querySelector('#totalConnections').innerText;
+        numeroTotalDeConexiones++;
+        document.querySelector('#totalConnections').innerText = numeroTotalDeConexiones;
+    }
+}
