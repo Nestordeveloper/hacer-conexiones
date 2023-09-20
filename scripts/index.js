@@ -38,6 +38,7 @@ function editProfile() {
 
 
 //* Funciones objetivo *//
+/*
 function cambiarNombre(elemento){
     const elementoNombreUsuario = document.querySelector('userName');
     elementoNombreUsuario.innerText = "Martha Gómez";
@@ -54,4 +55,4 @@ function removerUsuario(elemento, opcion){
         numeroTotalDeConexiones++;
         document.querySelector('#totalConnections').innerText = numeroTotalDeConexiones;
     }
-}
+} */
